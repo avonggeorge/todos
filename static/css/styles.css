@@ -428,7 +428,7 @@ h3 {
 .cta-item {
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(/task_manager/static/images/world_map.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(https://learn.g2.com/hubfs/Stock%20images/Image%20of%20a%20light%20blue%20world%20map-1.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -508,11 +508,11 @@ h3 {
 .sub-header {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/task_manager/static/images/about\ us.jpg);
-background-position: center;
-background-size: cover;
-text-align: center;
-color: #fff
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/todos/static/images/world_map.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff
 }
 
 .sub-header h1 {
