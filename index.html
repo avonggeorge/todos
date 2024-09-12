@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/task_manager/static/images/logo.png" type="images/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="/task_manager/static/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <link rel="stylesheet" href="/task_manager/static/css/0-styles.css">
+    <title>Todos</title>
+    <script src="https://kit.fontawesome.com/4f6db0661c.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    /* CSS for the homepage */
+body {
+    scroll-behavior: smooth;
+}
+    /* CSS for the the registration/login */
+    .contact {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.george {
+    bottom: -100px;
+    m
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(105, 87, 87, 0.1);
+    text-align: center;
+    font-size: 25px;
+}
+
+.skphoto {
+    width: 16%;
+    height: 260px;
+    border-radius: 50%;
+    padding: 30px;
+    margin-right: ;
+}
+
+.onyi {
+    bottom: 100px;
+    m
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(105, 87, 87, 0.1);
+    text-align: center;
+    font-size: 25px;
+}
+
+.onyiphoto {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: ;
+}
+
+.contact-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 40px;
+}
+
+</style>
+<body>
+<section class="header" id="header">
+<!-- <nav> -->
+        <nav>
+            <!-- <div class="container"> -->
+                    <a href="#header"><img src="/task_manager/static/images/Todos_logo3.drawio.png" alt="logo"></a>
+        <div class="nav-links">
+            <i class="fa-solid fa-circle-xmark fa-xl"></i>
+            <ul>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <i class="fa-solid fa-grid fa-2xl"></i>
+</nav>
+
+
+<!-- Hero -->
+<div class="text-box">
+
+    <div class="text-content">
+        <div class="text-row">
+            <h1>The best way to manage your task is to ace them!</h1>
+            
+            <p>Todos is a task managing application that lets you manage, organize and take charge of your task. <br>
+                It is easy to use with a responsive and attractive web interface. <br>
+                So go ahead and own your task, own success</p>
+
+            <button class="btnLogin-popup">Get Started</button>
+
+                    </div>
+                    <div class="text-row">
+                        <img src="/task_manager/static/images/bground.png" alt="background image" style="border-radius: 15px;">
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot password</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link"> Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> I agree to terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link"> Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<section class="video" id="demo" style="width: 50%; margin: 0 auto; text-align: center;">
+  <h1 class="video-heading">
+    See How It Works <br>
+    <br>
+  </h1> 
+  <div class="video-content">
+    <iframe width="860" height="415" src="https://www.youtube.com/embed/mg_ii2IxLpY?si=RYx0JbhVXBENk1-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+    </iframe>
+  </div> 
+</section>
+
+
+    <!-- features -->
+
+<section class="features" id="feature">
+    <h1 id="features">Key Features</h1>
+    <p>Unlock the power of task management with these powerful features, designed to keep you organized and boost your productivity.</p>
+
+    <div class="row">
+        <div class="features-col">
+            <h3>Prioritize Like a Pro</h3>
+            <img src="/task_manager/static/images/priority.png" alt="task decomposition icon">
+            <p>
+                Easily prioritize your tasks with our intuitive drag-and-drop interface. Organize tasks by urgency or importance and
+                stay focused on what matters most.
+            </p>
+        </div>
+        <div class="features-col">
+            <h3>Smart Task Scheduling</h3>
+            <img src="/task_manager/static/images/planning.png" alt="">
+            <p>
+                Schedule tasks seamlessly with our calendar integration. Set due dates, create recurring tasks, and receive timely
+                reminders to ensure you never miss a deadline.
+            </p>
+        </div>
+        <div class="features-col">
+            <h3>Effortless Task Breakdown</h3>
+            <img src="/task_manager/static/images/Task-decomposition_icon.png" alt="">
+            <p>
+                Break down complex tasks into smaller, manageable steps. Our subtask feature helps you tackle big projects with ease,
+                ensuring steady progress toward your goals.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Campus -->
+ <section class="campus">
+    <h1>Who We Serve</h1>
+    <p>From students to everyday individuals and busy professionals, our app is designed to meet the needs of a diverse range of users.
+    We help people in various fields achieve more.</p>
+
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="/task_manager/static/images/busy student.jpg" alt="smiling emoji">
+            <div class="layer">
+                <h3>Students</h3>
+            </div>
+        </div>
+
+        <div class="campus-col">
+            <img src="/task_manager/static/images/busy housewife.jpg" alt="smiling emoji">
+            <div class="layer">
+                <h3>Everyday Individuals</h3>
+            </div>
+        </div>
+
+            <div class="campus-col">
+                <img src="/task_manager/static/images/busy professionals.jpg" alt="smiling emoji">
+                <div class="layer">
+                    <h3>Busy Professionals</h3>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+ </section>
+
+<!-- choose-us -->
+ <section class="choose-us">
+    <h1>Why Choose Us?</h1>
+    <p>Discover the key benefits that have made thousands of users worldwide trust us for their day-to-day tasks:</p>
+
+    <div class="row">
+        <div>
+            <img src="/task_manager/static/images/tick_off.jpg" alt="orange">
+            <h3>Increased Productivity</h3>
+            <p>Accomplish more in less time with our intuitive task management features. Stay organized and focus on what
+            matters.</p>
+        </div>
+        <div>
+            <img src="/task_manager/static/images/time management.jpg" alt="orange">
+            <h3>Better Time Management</h3>
+            <p>Stay on top of your schedule with smart tools that help you plan efficiently.</p>
+        </div>
+        <div>
+            <img src="/task_manager/static/images/relaxing after a day's work.jpg" alt="orange">
+            <h3>Reduced Stress</h3>
+            <p>Simplify your tasks and enjoy peace of mind knowing that everything is under control.</p>
+        </div>
+    </div>
+ </section>
+
+
+
+ <!-- Testimonials -->
+  <section class="testimonials">
+    <h1>What Our Users Say</h1>
+
+    <div class="row">
+        <div class="testimonial-col">
+        <img src="/task_manager/static/images/bground.png" alt="lady holding calender">
+        <div>
+            <p>I find this app very user-friendly and usefull in that it helps me to highlight my daily quest with ease.</p>
+            <h3>Hannah Umeh</h3>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-regular fa-star" style="color: #63E6BE;"></i>
+        </div>
+    </div>
+
+    <div class="testimonial-col">
+        <img src="/task_manager/static/images/bground.png" alt="lady holding calender">
+        <div>
+            <p>Personaly I like to organize alot, so when I saw this project, I could'nt help but to jump at it and see what it does, and honestly I must say for a bigginer project, I'm very impressed. I cant wait for the mobile app version, I might just dumb all other apps i use for management</p>
+            <h3>Christian Grinch</h3>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-sharp fa-solid fa-star-half-stroke" style="color: #63E6BE;"></i>
+        </div>
+        </div>
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+   <section class="cta">
+    <div class="cta-item">
+        <h1>Our Reach</h1>
+        <p>You are one click away from our reach! Todos is making a difference for users everywhere. <br> Be part of our growing community that values productivity and success.</p>
+    <!-- <a href="" class="hero-btn">CONTACT US</a> -->
+    </div>
+   </section>
+
+
+
+   <!-- Footer -->
+
+<section class="footer">
+<h4 id="about-us"><h2>About Us</h2></h4>
+<p>Our lives everyday is filled with a lot of activities that needs to be carried out especially for student like us learning FullStack Software Engineering. We often have too much to juggle with, from  studies to practice, 
+    projects completion deadlines and other activities including personal stuffs. We have used some task management app that helped us archive some of our goals. So we thought why don't we design a
+     task manager application tailored for students like us and in extension a wider user community. That was when we came up with the idea of a task manager application, and called it "Todos". <br>
+    <div class="contact" id="contact">
+        <img src="{{ url_for('static', filename='images/dog.jpg') }}" alt="contact-photo" class="skphoto">
+        <div class="george">
+            <p>Hi, my name is George Avong,<br>
+                I am a studen at ALX Africa,<br>
+                I am passionate about technologies and <br>
+                I love to play games, listen to music and code! <br>
+                You can find me @ <br>
+                <span>
+                    <a href="https://twitter.com/Escay1"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.facebook.com/george.avong.96"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/george_avong/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://github.com/george-avong"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="mailto:george.avong@gmail.com"><ion-icon name="mail"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/george-avong-5608a51b6/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://www.stackoverflow.com/users/14366172/george-avong"><ion-icon name="logo-stack-overflow"></ion-icon></a>
+                    <a href="https://www.reddit.com/user/Escay1"><ion-icon name="logo-reddit"></ion-icon></a>
+                    <a href="https://www.twitch.tv/georgeavong"><ion-icon name="logo-twitch"></ion-icon></a>
+                    <a href="https://www.discord.com/users/857981791296270336"><ion-icon name="logo-discord"></ion-icon></a>
+    
+                </span>
+            </p>
+        </div>
+    
+        <p>
+            <img src="{{ url_for('static', filename='images/cat.jpg') }}" alt="contact-photo" class="onyiphoto">
+        </p>
+        <div class="onyi">
+            <p>Hello, I am Mrs Onyinyechi Ikediego,<br>
+                I am a studen at ALX Africa,<br>
+                I am passionate about technologies and <br>
+                I love to play games, listen to music and code! <br>
+                You can find me @ <br>
+                <span>
+                    <a href="https://twitter.com/Escay1"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.facebook.com/george.avong.96"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/george_avong/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://github.com/george-avong"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="mailto:george.avong@gmail.com"><ion-icon name="mail"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/george-avong-5608a51b6/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://www.stackoverflow.com/users/14366172/george-avong"><ion-icon name="logo-stack-overflow"></ion-icon></a>
+                    <a href="https://www.reddit.com/user/Escay1"><ion-icon name="logo-reddit"></ion-icon></a>
+                    <a href="https://www.twitch.tv/georgeavong"><ion-icon name="logo-twitch"></ion-icon></a>
+                    <a href="https://www.discord.com/users/857981791296270336"><ion-icon name="logo-discord"></ion-icon></a>
+    
+                </span>
+            </p>
+        </div>
+    </div>
+     <h3>Mission</h3>
+At Todos, we are passionate about helping you stay organized and productive. Our team
+is dedicated to creating a user-friendly tool that simplifies task management and enhances productivity. Whether you are
+a busy professional, a student juggling multiple projects, or anyone looking to stay on top of your tasks, Todos is
+designed with you in mind.</p>
+<a class="hero-btn" href="about.html">LEARN MORE ABOUT US</a>
+<div class="icons">
+<i class="fa-sharp fa-solid fa-circle-x"></i>
+<i class="fa-sharp fa-solid fa-circle-x"></i>
+<i class="fa-sharp fa-solid fa-circle-x"></i>
+<i class="fa-sharp fa-solid fa-circle-x"></i>
+</div>
+<p>Made with &#x2764;&#xfe0f; by Etta</p>
+</section>    
+
+<!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="/task_manager/static/js/scripts.js" defer></script>
+</body>
+</html>

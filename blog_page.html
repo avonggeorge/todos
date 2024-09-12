@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Website</title>
+    <link rel="shortcut icon" href="/task_manager/static/images/logo.png" type="images/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/task_manager/static/css/styles.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+        integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4f6db0661c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <!-- <nav> -->
+        <nav>
+            <!-- <div class="container"> -->
+            <a href="index.html"><img src="/task_manager/static/images/Todos_logo3.drawio.png" alt="logo"></a>
+            <div class="nav-links">
+                <i class="fa-solid fa-circle-xmark fa-xl"></i>
+                <ul>
+                    <li><a class="xl" href="index.html">HOME</a></li>
+                    <li><a class="xl" href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a class="btn-light" href="#">LOGIN</a></li>
+                    <li><a href="#">SIGNUP</a></li>
+                </ul>
+            </div>
+            <!-- Hamburger Button -->
+            <!-- <button class="hamburger-button">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </button>
+        <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">GET STARTED</a></li>
+                </ul>
+        </div> -->
+            </div>
+            <i class="fa-solid fa-grid fa-2xl"></i>
+        </nav>
+
+        <h1>Blog</h1>
+    </section>
+
+    <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <!-- image path -->
+                <h2>Boost Your Productivity with Expert Tips</h2>
+            <br>
+            <p>
+            Welcome to todos blog! Here, we share insights, tips, and strategies to help you stay
+            productive, organized, and stress-free. Whether you're a busy professional, student, or just looking to get more out of
+            your day, our blog offers practical advice to help you achieve your goals and maximize your time.
+            </p>
+       
+            <div class="comment-box">
+
+                <h3>Leave a comment</h3>
+
+                <form action="" class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your comment"></textarea>
+                    <button type="submit"></button>POST COMMENT</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Busness Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>BComputer Science</span>
+                <span>21</span>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>At Todos, we are passionate about helping you stay organized and productive. Our team
+            is dedicated to creating a user-friendly tool that simplifies task management and enhances productivity.
+            Whether you are
+            a busy professional, a student juggling multiple projects, or anyone looking to stay on top of your tasks,
+            Todos is
+            designed with you in mind.</p>
+        <a class="hero-btn" href="#">LEARN MORE ABOUT US</a>
+        <div class="icons">
+            <i class="fa-sharp fa-solid fa-circle-x"></i>
+            <i class="fa-sharp fa-solid fa-circle-x"></i>
+            <i class="fa-sharp fa-solid fa-circle-x"></i>
+            <i class="fa-sharp fa-solid fa-circle-x"></i>
+        </div>
+        <p>Made with <i class="fa-sharp fa-solid fa-heart"> by Etta</i></p>
+    </section>
+
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

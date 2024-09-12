@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #5c3b00 10%,  #af7c0f 4%, #dcbd7a  95%); /* Gradient from #af7c0f to #f5c6aa */
+}
+
+header {
+    width: 100%;
+    position: fixed; /* This ensures the nav bar stays at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Keeps it above other content */
+}
+
+.topnav {
+    background-color: #5c3b00;
+    overflow: hidden;
+    width: 100%; /* Make sure the nav spans the entire width of the page */
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px; /* Control the overall width of the content */
+    width: 100%;
+    padding: 20px;
+}
+
+.text-section {
+    flex: 1;
+    text-align: left;
+    max-width: 45%;
+    padding-right: 20px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 45px;
+    color: #262626; /* White text for better contrast against #af7c0f */
+}
+
+.intro {
+    margin-top: 0;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Ensure the image is aligned to the right */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px dotted black;
+    border-radius: 10px;
+    margin-left: 20px; /* Add some space between the text and the image */
+}
+
+
